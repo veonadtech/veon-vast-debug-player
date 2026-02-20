@@ -45,15 +45,10 @@ android {
 }
 
 dependencies {
-//    implementation(libs.androidx.core.ktx)
-//    implementation(libs.androidx.appcompat)
     implementation(libs.material)
-//    implementation(libs.androidx.activity)
-//    implementation(libs.androidx.constraintlayout)
-//    testImplementation(libs.junit)
-//    androidTestImplementation(libs.androidx.junit)
-//    androidTestImplementation(libs.androidx.espresso.core)
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.1.5")
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    coreLibraryDesugaring(libs.desugar.jdk.libs)
     implementation(libs.androidx.media3.exoplayer)
     implementation(libs.androidx.media3.ui)
     implementation(libs.androidx.media3.exoplayer.ima)

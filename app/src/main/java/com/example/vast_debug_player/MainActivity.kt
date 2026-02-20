@@ -1,13 +1,15 @@
 package com.example.vast_debug_player
 
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.media3.common.util.UnstableApi
 import com.example.vast_debug_player.ads.ImaManager
 import com.example.vast_debug_player.databinding.ActivityMainBinding
 import com.example.vast_debug_player.logs.AdEventLogger
 import com.example.vast_debug_player.player.PlayerManager
-import android.widget.Toast
 
+@UnstableApi
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding

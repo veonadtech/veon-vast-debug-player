@@ -10,7 +10,7 @@ class LogAdapter : RecyclerView.Adapter<LogAdapter.LogViewHolder>() {
 
     private val items = mutableListOf<AdLogItem>()
 
-    inner class LogViewHolder(val binding: ItemLogBinding)
+    class LogViewHolder(val binding: ItemLogBinding)
         : RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): LogViewHolder {

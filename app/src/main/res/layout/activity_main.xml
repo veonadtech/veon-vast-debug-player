@@ -1,26 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="8dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <EditText
-        android:id="@+id/inputUrl"
-        android:hint="Enter MP4 or VAST URL"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/urlInputLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_mp4_or_vast_url"
+        app:endIconMode="clear_text">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputUrl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textUri"
+            android:maxLines="1"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
     <Button
         android:id="@+id/btnPlayDirect"
-        android:text="Play Direct"
+        android:text="@string/play_direct"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/btnPlayVast"
-        android:text="Play VAST"
+        android:text="@string/play_vast"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
