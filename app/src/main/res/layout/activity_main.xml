@@ -5,7 +5,9 @@
     android:orientation="vertical"
     android:padding="8dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true">
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/urlInputLayout"
