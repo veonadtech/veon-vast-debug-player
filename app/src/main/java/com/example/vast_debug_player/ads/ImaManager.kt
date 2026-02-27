@@ -42,8 +42,10 @@ class ImaManager(
         adsLoader?.setPlayer(player)
 
         val mediaSourceFactory = DefaultMediaSourceFactory(dataSourceFactory)
-            .setAdsLoaderProvider { adsLoader }
-            .setAdViewProvider(playerView)
+            .setLocalAdInsertionComponents(
+                { adsLoader },
+                playerView
+            )
 
         val uniqueAdsId = System.currentTimeMillis().toString()
 
